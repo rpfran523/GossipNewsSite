@@ -1,0 +1,14 @@
+run = "npm install && npm run build && npx serve dist"
+hidden = [".config", "package-lock.json"]
+
+[nix]
+channel = "stable-22_11"
+
+[env]
+PATH = "/home/runner/$REPL_SLUG/.config/npm/node_global/bin:/home/runner/$REPL_SLUG/node_modules/.bin:$PATH"
+
+[deployment]
+build = ["npm", "run", "build"]
+run = ["npx", "serve", "dist"]
+deploymentTarget = "static"
+publicDir = "dist"
