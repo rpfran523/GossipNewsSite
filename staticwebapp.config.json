@@ -1,0 +1,14 @@
+{
+  "navigationFallback": {
+    "rewrite": "/index.html",
+    "exclude": ["/images/*.{png,jpg,gif}", "/css/*", "/js/*"]
+  },
+  "globalHeaders": {
+    "Access-Control-Allow-Origin": "https://cms.spillmoretea.com",
+    "Access-Control-Allow-Methods": "GET, OPTIONS",
+    "Access-Control-Allow-Headers": "Content-Type"
+  },
+  "mimeTypes": {
+    ".json": "text/json"
+  }
+} 
